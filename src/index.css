@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  @apply h-full;
+}
+
+body {
+  @apply bg-blue-500;
+}
+
+li {
+  @apply w-10 h-10 rounded-full bg-white flex items-center justify-center;
+}
