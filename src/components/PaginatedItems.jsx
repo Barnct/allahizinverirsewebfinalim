@@ -4,10 +4,9 @@ import ReactPaginate from 'react-paginate';
 
 export default function PaginatedItems({ items, itemsPerPage }) {
   const [itemOffset, setItemOffset] = useState(0);
-
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = items.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(items.length / itemsPerPage);
+  const pageCount = Math.ceil(items.length / itemsPerPage); // sayfada tariflerin ne kadar gösterileceğini hesaplar
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
@@ -17,7 +16,7 @@ export default function PaginatedItems({ items, itemsPerPage }) {
   return (
     <>
       <div className="mt-4 min-h-[550px] h-full grid md:grid-cols-3 gap-4 place-items-center">
-        <Items currentItems={currentItems} />
+        <Items currentItems={currentItems} /> {/* sayfada gösterir */}
       </div>
       <ReactPaginate
         breakLabel="..."
