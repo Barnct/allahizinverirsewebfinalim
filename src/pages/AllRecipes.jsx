@@ -18,13 +18,13 @@ const AllRecipes = () => {
 
   const filteredData = () => {
     if (choice === 0) {
-      const arr = data.sort(() => Math.random() - 0.5);
+      const arr = data.sort(() => Math.random() - 0.5); // random butonu basıldığında veriyi random sıralar
       return arr;
     } else if (choice === -1) {
-      const arr = data.sort((a, b) => b.protein - a.protein);
+      const arr = data.sort((a, b) => b.protein - a.protein); // datayı proteine göre sıralar
       return arr;
     } else if (choice === 1) {
-      const arr = data.sort((a, b) => b.karbonhidrat - a.karbonhidrat);
+      const arr = data.sort((a, b) => b.karbonhidrat - a.karbonhidrat); // datayı karbonhidrata göre sıralar
       return arr;
     }
   };
@@ -35,7 +35,7 @@ const AllRecipes = () => {
 
   return loading ? (
     <p className="mx-auto mt-4 text-center text-black px-4 py-2 w-max bg-white rounded">
-      Loading...
+      bum bum bum
     </p>
   ) : (
     <>

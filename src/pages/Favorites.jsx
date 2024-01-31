@@ -20,7 +20,7 @@ const AllRecipes = () => {
 
   return loading ? (
     <p className="mx-auto mt-4 text-center text-black px-4 py-2 w-max bg-white rounded">
-      Loading...
+      veri yuklenio aslan {/* veri yüklenirken gelen yazı*/}
     </p>
   ) : (
     <div className="mt-4 min-h-[550px] h-full grid md:grid-cols-3 gap-4 place-items-center">

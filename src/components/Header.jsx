@@ -11,6 +11,7 @@ const Header = () => {
     <>
       <header className="p-4 rounded-lg mx-auto flex items-center justify-between w-full bg-white">
         <Link to="/" className="text-base md:text-xl font-bold">
+          {/* sitenin logosu basıldığında home'a atıyor */}
           YEMEK TARIFLERI
         </Link>
         <SignedOut>
